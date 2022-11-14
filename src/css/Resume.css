@@ -1,0 +1,82 @@
+/* .resume-container {} */
+
+
+/* .education {} */
+
+.education div,
+.experience div {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+
+    width: 100%;
+}
+
+.education div h2,
+.experience div h2 {
+    color: var(--title-color);
+    margin: 0 10px;
+}
+
+.education div svg,
+.experience div svg {
+    color: rgb(250 82 82);
+    font-size: 28px;
+}
+
+
+.education ul li,
+.experience ul li {
+    border: 2px solid var(--border-color);
+    border-radius: 1rem;
+    padding: 1.5rem;
+
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+
+    background: var(--bg-portfolioItem);
+}
+
+
+.education ul li strong,
+.experience ul li strong {
+    color: var(--title-color);
+    margin: 10px 0;
+
+}
+
+.education ul li span,
+.education ul li p,
+.experience ul li span,
+.experience ul li p,
+.skills .name,
+.langs .name {
+    color: var(--text-color);
+}
+
+
+/* .experience {} */
+
+
+.skills,
+.langs {
+    margin-top: 50px;
+}
+
+.skills h2,
+.langs h2 {
+    color: var(--title-color);
+}
+
+@media screen and (min-width:768px) {
+
+    .education,
+    .experience,
+    .skills,
+    .langs {
+        width: 45%;
+    }
+}
+
+@media screen and (min-width:992px) {}
