@@ -9,6 +9,10 @@
 
     width: 100%;
     z-index: 99;
+    max-width: 1360px;
+
+    border-bottom-left-radius:1rem ;
+    border-bottom-right-radius: 1rem;
 }
 
 .navbar-container>div {
@@ -157,7 +161,8 @@
 
 @media screen and (min-width:992px) {
     .navbar-container {
-        padding: 20px 40px;
+        padding: 20px;
+        width: 93%;
 
         /* From https://css.glass */
         background: rgba(255, 255, 255, 0.2);
@@ -168,5 +173,12 @@
 
     .menu {
         display: flex;
+    }
+}
+
+@media screen and (min-width:1201px) {
+    .navbar-container {
+        width: 100%;
+        padding: 20px 40px;
     }
 }

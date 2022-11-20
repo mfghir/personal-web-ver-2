@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import styled from "styled-components";
 import { t } from "i18next";
 
@@ -27,6 +27,12 @@ const MenuMobile = () => {
     transform: open ? " rotate(-45deg)" : " rotate(0)",
   };
 
+  // useEffect(() => {
+  //   if(isActive){
+
+  //   }
+  // }, []);
+
   return (
     <div className="menuMobile-container">
       <span className="bars">
@@ -39,7 +45,7 @@ const MenuMobile = () => {
 
       <Show open={open}>
         <ul className="menu-mobile">
-          <li>
+          <li onClick={() => setOpen(false)}>
             <NavLink
               to="/"
               className={({ isActive }) => (isActive ? "active" : "")}
@@ -49,7 +55,7 @@ const MenuMobile = () => {
             </NavLink>
           </li>
 
-          <li>
+          <li onClick={() => setOpen(false)}>
             <NavLink
               to="/aboutme"
               className={({ isActive }) => (isActive ? "active" : "")}
@@ -59,7 +65,7 @@ const MenuMobile = () => {
             </NavLink>
           </li>
 
-          <li>
+          <li onClick={() => setOpen(false)}>
             <NavLink
               to="/resume"
               className={({ isActive }) => (isActive ? "active" : "")}
@@ -69,7 +75,7 @@ const MenuMobile = () => {
             </NavLink>
           </li>
 
-          <li>
+          <li onClick={() => setOpen(false)}>
             <NavLink
               to="/portfolios"
               className={({ isActive }) => (isActive ? "active" : "")}
@@ -78,7 +84,7 @@ const MenuMobile = () => {
               <span> {t("portfolios")} </span>
             </NavLink>
           </li>
-          <li>
+          <li onClick={() => setOpen(false)}>
             <NavLink
               to="/contact"
               className={({ isActive }) => (isActive ? "active" : "")}

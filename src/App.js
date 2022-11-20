@@ -11,7 +11,7 @@ import Home from "./components/Home";
 import Navbar from "./components/Navbar";
 import Portfolio from "./components/Portfolio";
 import Resume from "./components/Resume";
-// import { i18n } from "./i18n";
+
 import i18n from "./i18n.js";
 import { ToastContainer } from "react-toastify";
 
@@ -51,6 +51,8 @@ function App() {
 export default App;
 
 const CommonStyles = styled.div`
+
+
   .home-container *,
   .aboutme-container *,
   .resume-container *,

@@ -1,10 +1,8 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import { t } from "i18next";
 import styled from "styled-components";
 
 const FilterBtn = ({ setActiveFilter, activeFilter, setFilterWork, works }) => {
-  // const [item, setItem] = useState(false);
-
   useEffect(() => {
     if (activeFilter === "All") {
       setFilterWork(works);
@@ -17,6 +15,8 @@ const FilterBtn = ({ setActiveFilter, activeFilter, setFilterWork, works }) => {
   return (
     <BtnStyles>
       <div className="btns">
+
+        {/* v.1 👇 */}
         {/* {[t("btnAll"), "Web", "React", "Js", "UI"].map((item, index) => (
           <div
             key={index}
@@ -26,6 +26,8 @@ const FilterBtn = ({ setActiveFilter, activeFilter, setFilterWork, works }) => {
             {item}
           </div>
         ))} */}
+
+        {/* v.2 👇 - weith translate */}
         <div
           onClick={() => setActiveFilter("All")}
           className={` ${activeFilter === "All" ? "activeBtn" : ""}`}
@@ -71,6 +73,8 @@ const BtnStyles = styled.div`
   .btns {
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
+
     margin: 40px 0;
   }
 

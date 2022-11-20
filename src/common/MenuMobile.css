@@ -38,6 +38,9 @@
     position: fixed;
 
     right: -100%;
+    border-bottom-left-radius:1rem ;
+    border-bottom-right-radius: 1rem;
+    
     transition: all 0.5s ease-in-out 0s;
 }
 

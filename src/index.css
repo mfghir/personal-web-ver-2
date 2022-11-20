@@ -18,19 +18,9 @@
   --bg-sec: #ffffff;
   --title-color: #222222;
   --border-color: none;
+
   --bg-progress: #EDF2F2;
-
   --bg-portfolioItem: #fff0f0;
-
-  /* --box-shadow-sec: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-  --box-shadow-menuTM: 0px 10px 15px -3px rgb(0 0 0 / 15%);
-  --h4-color: #252525;
-
-  --span-color: #000000;
-  --strong-color: #222222;
-  --p-color: #111111;
-
-  --text-color: #666666; */
 }
 
 
@@ -42,18 +32,9 @@
   --bg-sec: #111111;
   --title-color: #ffffff;
   --border-color: #212425;
+
   --bg-progress: #1C1C1C;
   --bg-portfolioItem: none;
-  /* --box-shadow-sec: 0 10px 30px 0 rgb(185 185 185 / 15%);
-  --box-shadow-menuTM: 0px 10px 15px -3px rgba(145, 145, 145, 0.15);
-  --h4-color: #ffffff;
-
-  --span-color: #ffffff;
-  --strong-color: #ffffff;
-  --p-color: #ffffff; */
-
-  /* --text-color: #e2e2e2; */
-
 }
 
 
@@ -69,6 +50,9 @@
   background-size: cover;
   background-attachment: fixed;
   background-position: 50%;
+
+  display: flex;
+  justify-content: center;
 }
 
 
@@ -76,6 +60,8 @@
 
 .layout {
   padding-top: 80px;
+  max-width: 1440px;
+  margin-bottom: 40px;
 }
 
 
@@ -84,6 +70,7 @@
   display: flex;
   align-items: center;
   margin-bottom: 20px;
+  max-height: 40px;
 }
 
 .title h1 {
@@ -105,11 +92,10 @@
 .container {
   width: 100%;
   background: var(--bg-sec);
-  min-height: 100vh;
+  /* min-height: 100vh; */
 
   overflow: hidden;
   padding: 20px;
-
 }
 
 
