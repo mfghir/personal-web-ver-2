@@ -24,7 +24,7 @@ const Home = () => {
             typewriter.pauseFor(2500).deleteAll().start();
           }}
           options={{
-            strings: ["Web Developer", "UI Designer"],
+            strings: ["Web Developer", "UI Designer","Freelancer"],
             autoStart: true,
             loop: true,
           }}
@@ -34,7 +34,7 @@ const Home = () => {
       <ul className="socials">
         <li>
           <a
-            href="https://t.me/mfghir"
+            href="https://t.me/fatemeweb"
             target="_blank"
             rel="noreferrer"
             style={{ color: "#00405d" }}
@@ -45,7 +45,7 @@ const Home = () => {
 
         <li>
           <a
-            href="https://www.instagram.com/mfgh.ir/"
+            href="https://www.instagram.com/fatemeweb/"
             target="_blank"
             rel="noreferrer"
             style={{ color: "#517fa4" }}
